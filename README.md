@@ -13,9 +13,11 @@ jstack <PID> | grep hystrix
 the number of lines returned by the above command, will match the number of calls to HystrixCommand.execute(),
 not followed by Hystrix.reset().
 
-```user@host:~$ jstack 4741 | grep hystrix```
-```hystrix-hystrix_reset_poc-2 prio=10 ... waiting on condition ...```
-```hystrix-hystrix_reset_poc-1 prio=10 ... waiting on condition ...```
+```bash
+user@host:~$ jstack 4741 | grep hystrix
+hystrix-hystrix_reset_poc-2 prio=10 ... waiting on condition ...
+hystrix-hystrix_reset_poc-1 prio=10 ... waiting on condition ...
+```
 
 The example was heavily inspired by the description of this issue under the following URL:
 
