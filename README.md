@@ -19,6 +19,6 @@ hystrix-hystrix_reset_poc-2 prio=10 ... waiting on condition ...
 hystrix-hystrix_reset_poc-1 prio=10 ... waiting on condition ...
 ```
 
-The example was heavily inspired by the description of this issue under the following URL:
+The example was heavily inspired by a description of this issue under the following URL:
 
 https://github.com/Netflix/Hystrix/issues/102
