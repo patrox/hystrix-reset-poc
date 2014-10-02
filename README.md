@@ -8,7 +8,9 @@ otherwise the thread created by the execute() method will be stuck in WAITING st
 
 This can be easilly identified, by running:
 
+```bash
 jstack <PID> | grep hystrix
+```
 
 the number of lines returned by the above command, will match the number of calls to HystrixCommand.execute(),
 not followed by Hystrix.reset().
